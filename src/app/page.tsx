@@ -15,7 +15,7 @@ export default async function StaticPage() {
 
  return (
   <div>
-   <h1 className={styles.text__blue}>{time}</h1>
+   <h1 className={styles.text__blue}>更新::{time}</h1>
    <ul>
     {contents.map((post) => {
      return (
