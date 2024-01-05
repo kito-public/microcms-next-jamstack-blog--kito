@@ -1,0 +1,9 @@
+.body {
+    background-color: #ddd;
+}
+.text {
+    color: red;
+    &__blue {
+        color: blue;
+    }
+}
