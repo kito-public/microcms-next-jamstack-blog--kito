@@ -7,13 +7,20 @@ import type {
  MicroCMSDate,
 } from "microcms-js-sdk";
 
+export type category = {
+  id: string;
+  name: string;
+} & MicroCMSDate;
+
 //ブログの型定義
 export type Blog = {
  id: string;
  title: string;
  body: string;
+ category: category[];
  eyecatch?: MicroCMSImage;
 } & MicroCMSDate;
+
 
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
  throw new Error("MICROCMS_SERVICE_DOMAIN is required");
